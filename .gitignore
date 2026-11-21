@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.sqlite*
+*.db
+*.db-*
+.env*
+.venv/
+node_modules/
+dist/
+*.tsbuildinfo
+/data/
+/记忆库/

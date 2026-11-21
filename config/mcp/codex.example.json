@@ -1,0 +1,7 @@
+{
+  "name": "xinhai_local",
+  "transport": "stdio",
+  "command": "python",
+  "args": ["-m", "xinhai.mcp_server"],
+  "env": {"PYTHONPATH": "<DeepSea>\\src"}
+}

@@ -1,0 +1,14 @@
+version: "0.1"
+retrieval:
+  fusion: rrf
+  weights:
+    text: 1.0
+    vector: 1.0
+  reranker: keyword
+  min_score: null
+  expand_source: false
+  preserve_fts_fallback: true
+evaluation:
+  baseline: ocr_summary_lexical
+  candidate: BAAI/bge-m3
+  decision_rule: "同一评估集上比较 Recall@5、MRR 和误召回率"

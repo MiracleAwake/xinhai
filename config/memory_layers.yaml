@@ -1,0 +1,27 @@
+# 心海记忆层预设
+layers:
+  - id: worklog
+    name: 工作日志
+    description: 任务、过程、验证、待办
+    scope: workspace
+    markdown_path: 工作日志
+  - id: guide
+    name: 工作指南
+    description: 长期规则、身份、工作风格和目录指针
+    scope: workspace
+    markdown_path: 工作指南
+  - id: node
+    name: 核心记忆节点
+    description: 重要的情感、思想、生活和关系记忆
+    scope: personal
+    markdown_path: 核心记忆节点
+  - id: lesson
+    name: 经验教训库
+    description: 错误、原因、修正和可复用方法
+    scope: workspace
+    markdown_path: 经验教训库
+  - id: tool
+    name: 工具库
+    description: 可复用工具代码、思路、依赖和验证
+    scope: workspace
+    markdown_path: 工具库

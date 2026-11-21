@@ -1,0 +1,9 @@
+{
+  "client_type": "codex",
+  "workspace_id": "deepsea",
+  "branches": [
+    {"branch_id": "GO2", "session_id": "s-GO2", "thread_id": "t-GO2"},
+    {"branch_id": "GO3", "session_id": "s-GO3", "thread_id": "t-GO3"}
+  ],
+  "assertions": ["branch_isolation", "identity_chain", "candidate_or_active_record"]
+}

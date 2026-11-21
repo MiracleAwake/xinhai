@@ -1,0 +1,26 @@
+{
+  "version": "M0",
+  "privacy": "synthetic-only",
+  "samples": [
+    {"id":"img-terminal-001","modality":"image","asset_ref":"fixture://terminal-001","ocr":"ERROR timeout","summary":"终端显示一次超时错误"},
+    {"id":"img-doc-001","modality":"image","asset_ref":"fixture://doc-001","ocr":"memory layer","summary":"文档说明记忆分层"},
+    {"id":"text-001","modality":"text","asset_ref":null,"ocr":"","summary":"工作日志记录测试结果"}
+    ,{"id":"text-002","modality":"text","asset_ref":null,"ocr":"","summary":"经验教训：SQLite 并发写入需要锁和 busy timeout"}
+    ,{"id":"text-003","modality":"text","asset_ref":null,"ocr":"","summary":"工作指南：先记账后动手，报告前核对依据"}
+    ,{"id":"text-004","modality":"text","asset_ref":null,"ocr":"","summary":"工具库：使用脚本检查 Ollama 模型清单"}
+    ,{"id":"text-005","modality":"text","asset_ref":null,"ocr":"","summary":"核心记忆：搭档为知遥建立了 Sweet Home"}
+    ,{"id":"img-code-001","modality":"image","asset_ref":"fixture://code-001","ocr":"sqlite3 OperationalError database is locked","summary":"代码截图显示数据库锁冲突"}
+    ,{"id":"img-config-001","modality":"image","asset_ref":"fixture://config-001","ocr":"XINHAI_MODEL_PROVIDER=ollama","summary":"配置截图显示启用 Ollama Provider"}
+  ],
+  "queries": [
+    {"id":"q1","text":"超时错误","relevant":["img-terminal-001"]},
+    {"id":"q2","text":"记忆分层","relevant":["img-doc-001","text-001"]}
+    ,{"id":"q3","text":"SQLite 写入锁冲突","relevant":["text-002","img-code-001"]}
+    ,{"id":"q4","text":"先记账再核对依据","relevant":["text-003"]}
+    ,{"id":"q5","text":"Ollama 模型清单脚本","relevant":["text-004","img-config-001"]}
+    ,{"id":"q6","text":"知遥 Sweet Home","relevant":["text-005"]}
+    ,{"id":"q7","text":"模型下载权限和防火墙","relevant":["img-terminal-001","img-config-001"]}
+    ,{"id":"q8","text":"数据库并发锁和写入竞争","relevant":["text-002","img-code-001"]}
+    ,{"id":"q9","text":"记忆秘书模型摘要配置","relevant":["img-config-001","text-001"]}
+  ]
+}
